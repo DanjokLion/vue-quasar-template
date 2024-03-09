@@ -1,0 +1,32 @@
+import { RouteRecordRaw } from 'vue-router'
+
+const routes: RouteRecordRaw[] = [
+    {
+        path: '/',
+        component: () => import('layouts/MainLayout.vue'),
+        children: [
+            {
+                path: '',
+                component: () => import('pages/StubPage.vue')
+            },
+            {
+                path: 'auth',
+                component: () => import('pages/AuthPage.vue')
+            },
+            {
+                path: 'main',
+                component: () => import('pages/MainPage.vue')
+            }, 
+            {
+                path: 'error404',
+                component: () => import('pages/ErrorPage.vue')
+            }
+        ]
+    },
+    {
+        path: '/:catchAll(.*)*',
+        component: () => import('pages/ErrorNotFound.vue')
+    }
+]
+
+export default routes

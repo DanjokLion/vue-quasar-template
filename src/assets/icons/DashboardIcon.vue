@@ -1,0 +1,80 @@
+<template>
+    <svg
+        width="24"
+        height="22"
+        viewBox="0 0 24 22"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+    >
+        <mask id="path-1-inside-1_635_2666" fill="white">
+            <rect
+                x="16"
+                y="10.6665"
+                width="8"
+                height="10.6667"
+                rx="1"
+            />
+        </mask>
+        <rect
+            x="16"
+            y="10.6665"
+            width="8"
+            height="10.6667"
+            rx="1"
+            stroke="white"
+            stroke-width="5"
+            mask="url(#path-1-inside-1_635_2666)"
+        />
+        <mask id="path-2-inside-2_635_2666" fill="white">
+            <rect
+                x="10.6666"
+                width="13.3333"
+                height="8"
+                rx="1"
+            />
+        </mask>
+        <rect
+            x="10.6666"
+            width="13.3333"
+            height="8"
+            rx="1"
+            stroke="white"
+            stroke-width="5"
+            mask="url(#path-2-inside-2_635_2666)"
+        />
+        <mask id="path-3-inside-3_635_2666" fill="white">
+            <rect
+                width="8"
+                height="8"
+                rx="1"
+            />
+        </mask>
+        <rect
+            width="8"
+            height="8"
+            rx="1"
+            stroke="white"
+            stroke-width="5"
+            mask="url(#path-3-inside-3_635_2666)"
+        />
+        <mask id="path-4-inside-4_635_2666" fill="white">
+            <rect
+                y="10.6665"
+                width="13.3333"
+                height="10.6667"
+                rx="1"
+            />
+        </mask>
+        <rect
+            y="10.6665"
+            width="13.3333"
+            height="10.6667"
+            rx="1"
+            stroke="white"
+            stroke-width="5"
+            mask="url(#path-4-inside-4_635_2666)"
+        />
+    </svg>
+
+</template>
+<script setup></script>

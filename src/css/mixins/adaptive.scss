@@ -1,0 +1,51 @@
+// breakpoints
+$size-xs: 420px;
+$size-sm: 768px;
+$size-md: 1264px;
+$size-lg: 1920px;
+
+$map-breakpoints: (
+    'xs': $size-xs,
+    'sm': $size-sm,
+    'md': $size-md,
+    'lg': $size-lg
+);
+
+$display-breakpoints: (
+    'xs': 'only screen and (max-width: #{map-get($map-breakpoints, 'xs') - 1})',
+    'sm': 'only screen and (max-width: #{map-get($map-breakpoints, 'sm') - 1})',
+    'md': 'only screen and (max-width: #{map-get($map-breakpoints, 'md') - 1})',
+    'lg': 'only screen and (max-width: #{map-get($map-breakpoints, 'lg') - 1})',
+    'xlg': 'only screen and (min-width: #{map-get($map-breakpoints, 'lg')})'
+);
+
+// media queries
+@mixin mobile-sm {
+    @media #{map-get($display-breakpoints, 'xs')} {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media #{map-get($display-breakpoints, 'sm')} {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media #{map-get($display-breakpoints, 'md')} {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media #{map-get($display-breakpoints, 'lg')} {
+        @content;
+    }
+}
+
+@mixin desktop-lg {
+    @media #{map-get($display-breakpoints, 'xlg')} {
+        @content;
+    }
+}

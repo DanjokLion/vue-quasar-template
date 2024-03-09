@@ -1,0 +1,12 @@
+.base-button {
+    width: 100%;
+    min-height: 54px;
+    @include font-actay-wide-bold(16px);
+    @include tablet {
+        min-height: 40px;
+    }
+
+    &.q-btn--rectangle {
+        border-radius: 10px;
+    }
+}

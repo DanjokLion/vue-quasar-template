@@ -1,0 +1,20 @@
+@mixin font-actay-wide-bold($size: '16px', $weight: 700, $style: normal) {
+    font-family: 'ActayWide-Bold', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+}
+
+@mixin font-actay($size: '16px', $weight: 400, $style: normal) {
+    font-family: 'Actay-Regular', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+}
+
+@mixin font-nunito($size: '16px', $weight: 400, $style: normal) {
+    font-family: 'Nunito-Regular', sans-serif;
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+}

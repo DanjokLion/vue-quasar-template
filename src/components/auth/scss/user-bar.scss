@@ -1,0 +1,20 @@
+.user-bar {
+  display: flex;
+  gap: 16px;
+}
+
+.user-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50% !important;
+}
+
+.user-menu {
+  border-radius: 20px;
+}
+
+.user-bar-btns {
+  font-family: 'Nunito-Regular';
+  border-radius: 20px;
+  height: 56px;
+}
